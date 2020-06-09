@@ -1,0 +1,604 @@
+
+/*--------------------------------------------------------------
+# Disable AOS delay on mobile
+--------------------------------------------------------------*/
+@media screen and (max-width: 100%) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 80px;
+  z-index: 997;
+  transition: all 0.5s;
+}
+
+#header.header-scrolled {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  background: #fff;
+}
+
+#header .logo h1 {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#header .logo h1 a, #header .logo h1 a:hover {
+  color: #222222;
+  text-decoration: none;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+@media (max-width: 768px) {
+  #header {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    background: #fff;
+  }
+  #header .logo h1 {
+    font-size: 28px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Desktop Navigation */
+.nav-menu, .nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+  float: left;
+}
+
+.nav-menu a {
+  display: block;
+  position: relative;
+  color: #998f8f;
+  padding: 8px 0 12px 25px;
+  transition: 0.3s;
+  font-size:17px;
+  font-family: "Open Sans", sans-serif;
+  right:490px;
+  font-weight: bold;
+}
+
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  color: #222222;
+  text-decoration: none;
+}
+.nav-menu .loginbut{
+  position: relative;
+left:420px;
+
+}
+
+.nav-menu .get-started a {
+  position: relative;
+right:50px;
+  background: #50adeb;
+  color: #fff;
+  border-radius: 50px;
+  margin-left: 14px;
+  padding: 4px;
+  width:90px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.nav-menu .get-started a:hover {
+  background: #aad0e9;
+  color: #fff;
+}
+
+
+
+/* Mobile Navigation */
+.mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  color: #222222;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  z-index: 9999;
+  overflow-y: auto;
+  background: #fff;
+  transition: ease-in-out 0.2s;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.mobile-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-nav a {
+  display: block;
+  position: relative;
+  color: #222222;
+  padding: 10px 20px;
+  font-weight: 500;
+  outline: none;
+  align-items: center;
+}
+
+.mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.mobile-nav .get-started {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.mobile-nav .get-started a {
+  background: #3498db;
+  color: #fff;
+  border-radius: 50px;
+  margin: 0 15px;
+  padding: 10px 30px;
+  display: inline-block;
+}
+
+.mobile-nav .get-started a:hover {
+  background: #57aae1;
+  color: #fff;
+}
+
+.mobile-nav-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(9, 9, 9, 0.6);
+  overflow: hidden;
+  display: none;
+  transition: ease-in-out 0.2s;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: auto;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: rgb(73, 72, 72);
+}
+
+#hero h2 {
+  color: #a7a2a2;
+  margin-bottom: 50px;
+  font-size: 34px;
+}
+
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  font-weight: bold;
+  height: auto;
+}
+
+#hero .btn-get-started:hover {
+  background: #aad0e9;
+  border: 2px solid #aad0e9;
+ color: #fff;
+}
+
+
+@media (max-width:100%) {
+  #hero {
+  }
+ 
+  #hero .hero-img img {
+    width: 800px;
+
+
+  }
+}
+
+@media (max-width: 800px) {
+  #hero {
+    margin-top: 70px;
+
+  }
+  #hero h1 {
+    font-size: 48px;
+    line-height: 45px;
+    text-align: center;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+   text-align: center;
+
+  }
+  #hero a{
+    position: relative;
+    left: 30%;
+    margin-bottom: 50px;
+  }
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  #hero .hero-img img {
+    width: 400px;
+  }
+}
+
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+
+
+.clients {
+  text-align: center;
+  margin-top: 30px;
+  height:auto;
+}
+
+
+#clients .footer-newsletter {
+  padding: 50px 0;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+#clients .footer-newsletter form {
+  margin-top: 0px;
+  background: url("../img/bg-boost-desktop.svg") repeat,  #3A3053;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  height: 90px;
+
+}
+
+#clients .footer-newsletter form input[type="text"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 120px);
+}
+
+#clients .footer-newsletter form input[type="submit"] {
+  position: relative;
+  top: 0; 
+   margin-top: 20px;
+width:110px;
+  bottom: 0;
+  background: none;
+  height: 40PX;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.3s;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+
+}
+
+#clients .footer-newsletter form input[type="submit"]:hover {
+  background: #aad0e9;
+  border: 2px solid #aad0e9;
+
+}
+
+
+
+
+
+
+
+@media (max-width: 28px) {
+  .input[type=text]{
+position: relative;
+width: 10px;
+}
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+
+.services{
+  height: auto; 
+   background-color: rgb(233, 233, 233);
+
+}
+
+.statistic-title {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px;
+  }
+  
+  .statistic-title h2 {
+    font-size: 45px;
+    font-weight: bold;
+    position: relative;
+    color: #222222;
+    font-family:"Poppins";
+  }
+  
+  
+  .statistic-title p {
+    font-family:"Poppins";   
+     color: hsl(0, 0%, 57%);
+     text-align: center;
+     font-size: 30px;
+
+
+
+  }
+
+.services .box {
+  text-align: center;
+  border: 2px solid #fff;
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  background: #fff;
+  height: 280px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.services .box .icon {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ background-color: rgb(27, 10, 44); 
+ height: 70px;
+border-radius: 50%;
+width: 80px;
+position: relative;
+bottom:80%;
+right:40%;
+
+}
+
+
+.services .box h4 {
+  font-size: 24px; 
+   text-align: left; 
+   position: relative;
+   bottom: 60%;
+color:hsl(255, 11%, 22%);
+font-weight: bold;
+font-family:"Poppins";
+
+
+}
+
+
+.services .box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+  position: relative;
+  top:-50%;
+text-align: left;
+font-family:"Poppins";
+font-weight: bold;
+color:hsl(0, 0%, 57%);
+
+}
+
+
+
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+  background-size: cover;
+  padding: 60px 0;
+    background: url("../img/bg-boost-desktop.svg") repeat,  #3A3053;
+}
+
+
+.cta h3{
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+
+#cta .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  font-weight: bold;
+}
+
+#cta .btn-get-started:hover {
+  background: #aad0e9;
+  border: 2px solid #aad0e9;
+ color: #fff;
+}
+
+/*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  #footer {
+    background: #232027;  color: #fff;
+  
+    padding: 0 0 30px 0;
+    font-size: 14px;
+  }
+  
+  #footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #232027;  color: #fff;
+  
+  
+  }
+  
+  #footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+  }
+  #footer .footer-top .footer-contact h3 {
+  font-size: 50px;
+  background: #232027;  color: #fff;
+  
+  font-weight: bold;
+  
+  
+  }
+  #footer .footer-top .footer-contact h4 {
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  #footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Lato", sans-serif;
+    background: #232027;  color: #fff;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    background: #232027;  color: #fff;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    background: #232027;  color: #fff;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links  h4 {
+  
+    position: relative;
+  }
+  
+  
+  #footer .footer-top .footer-links ul a {
+    background: #232027;  color: hsl(257, 7%, 63%);
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;left:30%;
+    position: relative;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  
